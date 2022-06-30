@@ -1,0 +1,724 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "Jarvis",
+    "version": "2",
+    "intents": [
+      {
+        "description": "Intent to book a car on StayBooker",
+        "rejectionStatement": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, I have cancelled your reservation in progress."
+            }
+          ]
+        },
+        "name": "BookCar",
+        "version": "12",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "Book a car",
+          "Reserve a car",
+          "Make a car reservation",
+          "I want a ride",
+          "Get me a car",
+          "Book me a {CarType} in {PickUpCity}"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "CarTypeValues",
+            "slotTypeVersion": "1",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What type of car would you like to rent?  Our most popular options are economy, midsize, and luxury"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 5,
+            "name": "CarType",
+            "description": "Type of car being reserved."
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.NUMBER",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "How old is the driver for this rental?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 4,
+            "name": "DriverAge",
+            "description": "Age of the driver during the car rental."
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AU_Airports",
+            "slotTypeVersion": "1",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "In what city do you need to rent a car?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "PickUpCity",
+            "description": "City in which the car reservation is being made"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What day do you want to start your rental?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "PickUpDate",
+            "description": "Date to start the rental"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What day do you want to return the car?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 3,
+            "name": "ReturnDate",
+            "description": "Date of return.  Should be required when the flight is not one way."
+          }
+        ],
+        "confirmationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, I have you down for a {CarType} car rental in {PickUpCity} from {PickUpDate} to {ReturnDate}.  Should I book the reservation?"
+            }
+          ],
+          "maxAttempts": 2
+        },
+        "dialogCodeHook": {
+          "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+          "messageVersion": "1.0"
+        }
+      },
+      {
+        "rejectionStatement": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, your order will not be placed."
+            }
+          ]
+        },
+        "name": "BookFlights",
+        "version": "4",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "I would like a {CabinClass} flight to {AU_Destination}",
+          "Can I book a flight to {AU_Destination} on {FlightDate}",
+          "I want to catch a plane",
+          "fly me to {AU_Destination}",
+          "fly me somewhere",
+          "I want to fly to {AU_Destination}",
+          "book a flight",
+          "I want to go to {AU_Destination}"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What Australian airport are you departing from?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "AU_Departing"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What Australian destination are you travelling to?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "AU_Destination"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What cabin class do you want to travel in: economy, business or first?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 5,
+            "name": "CabinClass"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What time do you want to fly: morning or afternoon?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 4,
+            "name": "DepartureTime"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What date do you want to depart?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 3,
+            "name": "FlightDate"
+          }
+        ],
+        "confirmationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, I have you down for a {CabinClass} flight departing {AU_Departing} on {FlightDate} in the {DepartureTime}.  Should I book the reservation?"
+            }
+          ],
+          "maxAttempts": 3
+        },
+        "dialogCodeHook": {
+          "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+          "messageVersion": "1.0"
+        }
+      },
+      {
+        "rejectionStatement": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, I have cancelled your reservation in progress."
+            }
+          ]
+        },
+        "name": "BookHotel",
+        "version": "5",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "Book a hotel",
+          "I want to make a hotel reservation",
+          "Book a {Nights} night stay in {AU_Location}",
+          "Book my accomodation",
+          "I want to book a {RoomType} room on {CheckInDate}"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "AU_Airports",
+            "slotTypeVersion": "1",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Which Australian city do you want to stay in?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "AU_Location"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.DATE",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What day do you want to begin your stay?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "name": "CheckInDate"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.NUMBER",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "How many nights will you stay for?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 3,
+            "name": "Nights"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What type of room would you prefer: queen, king or deluxe?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 4,
+            "name": "RoomType"
+          },
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.AlphaNumeric",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Would you prefer a room with a view? Yes or no?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 5,
+            "name": "ViewPreference"
+          }
+        ],
+        "confirmationPrompt": {
+          "messages": [
+            {
+              "contentType": "PlainText",
+              "content": "Okay, I have you down for a {Nights} night stay in {AU_Location} starting {CheckInDate}.  Shall I book the reservation?"
+            }
+          ],
+          "maxAttempts": 3
+        },
+        "dialogCodeHook": {
+          "uri": "arn:aws:lambda:ap-southeast-2:963100174055:function:JarvisValidation",
+          "messageVersion": "1.0"
+        }
+      }
+    ],
+    "slotTypes": [
+      {
+        "description": "Enumeration representing possible types of cars available for rental",
+        "name": "CarTypeValues",
+        "version": "1",
+        "enumerationValues": [
+          {
+            "value": "standard"
+          },
+          {
+            "value": "full size"
+          },
+          {
+            "value": "midsize"
+          },
+          {
+            "value": "luxury"
+          },
+          {
+            "value": "economy"
+          },
+          {
+            "value": "minivan"
+          }
+        ],
+        "valueSelectionStrategy": "ORIGINAL_VALUE"
+      },
+      {
+        "description": "A list of Australian Airports for validation purposes",
+        "name": "AU_Airports",
+        "version": "1",
+        "enumerationValues": [
+          {
+            "value": "Port Hedland",
+            "synonyms": [
+              "PHE",
+              "Port hedland",
+              "port Hedland",
+              "phe"
+            ]
+          },
+          {
+            "value": "Cloncurry",
+            "synonyms": [
+              "CNJ",
+              "cloncurry",
+              "cnj"
+            ]
+          },
+          {
+            "value": "Adelaide",
+            "synonyms": [
+              "ADL",
+              "adelaide",
+              "adl"
+            ]
+          },
+          {
+            "value": "Newcastle",
+            "synonyms": [
+              "NTL",
+              "newcastle",
+              "ntl"
+            ]
+          },
+          {
+            "value": "Sunshine Coast",
+            "synonyms": [
+              "MCY",
+              "sunshine coast",
+              "mcy"
+            ]
+          },
+          {
+            "value": "Kununura",
+            "synonyms": [
+              "KNX",
+              "kununurra",
+              "knx"
+            ]
+          },
+          {
+            "value": "Port Macquarie",
+            "synonyms": [
+              "PQQ",
+              "port macquarie",
+              "Port macquarie",
+              "port Macquarie",
+              "pqq"
+            ]
+          },
+          {
+            "value": "Melbourne",
+            "synonyms": [
+              "MEL",
+              "melbourne",
+              "mel"
+            ]
+          },
+          {
+            "value": "Hobart",
+            "synonyms": [
+              "HBA",
+              "hobart",
+              "hba"
+            ]
+          },
+          {
+            "value": "Hamilton Island",
+            "synonyms": [
+              "HTI",
+              "hamilton Island",
+              "Hamilton island",
+              "hti"
+            ]
+          },
+          {
+            "value": "Darwin",
+            "synonyms": [
+              "DRW",
+              "darwin",
+              "drw"
+            ]
+          },
+          {
+            "value": "Brisbane",
+            "synonyms": [
+              "BNE",
+              "brisbane",
+              "bne"
+            ]
+          },
+          {
+            "value": "Karratha",
+            "synonyms": [
+              "KTA",
+              "karratha",
+              "kta"
+            ]
+          },
+          {
+            "value": "Learmonth",
+            "synonyms": [
+              "LEA",
+              "learmonth",
+              "lea"
+            ]
+          },
+          {
+            "value": "Launceston",
+            "synonyms": [
+              "LST",
+              "launceston",
+              "lst"
+            ]
+          },
+          {
+            "value": "Gold Coast",
+            "synonyms": [
+              "OOL",
+              "gold coast",
+              "Gold coast",
+              "gold Coast",
+              "ool"
+            ]
+          },
+          {
+            "value": "Paraburdoo",
+            "synonyms": [
+              "PBO",
+              "paraburdoo",
+              "pbo"
+            ]
+          },
+          {
+            "value": "Perth",
+            "synonyms": [
+              "PER",
+              "perth",
+              "per"
+            ]
+          },
+          {
+            "value": "Mount Isa",
+            "synonyms": [
+              "ISA",
+              "mount Isa",
+              "Mount isa",
+              "isa"
+            ]
+          },
+          {
+            "value": "Alice Springs",
+            "synonyms": [
+              "ASP",
+              "Alice",
+              "Alice springs",
+              "alice",
+              "alice Springs",
+              "asp"
+            ]
+          },
+          {
+            "value": "Albury",
+            "synonyms": [
+              "ABX",
+              "albury",
+              "abx"
+            ]
+          },
+          {
+            "value": "Cairns",
+            "synonyms": [
+              "CNS",
+              "cairns",
+              "cns"
+            ]
+          },
+          {
+            "value": "Geraldton",
+            "synonyms": [
+              "GET",
+              "geraldton",
+              "get"
+            ]
+          },
+          {
+            "value": "Ayers Rock Connellan",
+            "synonyms": [
+              "AYQ",
+              "ayers Rock",
+              "Ayers rock",
+              "ayq",
+              "Ayers Rock"
+            ]
+          },
+          {
+            "value": "Coffs Harbour",
+            "synonyms": [
+              "CFS",
+              "Coffs",
+              "coffs",
+              "coffs harbour",
+              "Coffs harbour",
+              "coffs Harbour",
+              "cfs"
+            ]
+          },
+          {
+            "value": "Canberra",
+            "synonyms": [
+              "CBR",
+              "canberra",
+              "cbr"
+            ]
+          },
+          {
+            "value": "Townsville",
+            "synonyms": [
+              "TSV",
+              "townsville",
+              "tsv"
+            ]
+          },
+          {
+            "value": "Sydney",
+            "synonyms": [
+              "SYD",
+              "sydney",
+              "syd"
+            ]
+          },
+          {
+            "value": "Mackay",
+            "synonyms": [
+              "MKY",
+              "mackay",
+              "mky"
+            ]
+          },
+          {
+            "value": "Kalgoorlie Boulder",
+            "synonyms": [
+              "Kalgoorlie-Boulder",
+              "KGI",
+              "kgi",
+              "Kalgoorlie",
+              "kalgoorlie",
+              "kalgoorlie boulder",
+              "kalgoorlie-boulder"
+            ]
+          }
+        ],
+        "valueSelectionStrategy": "TOP_RESOLUTION"
+      }
+    ],
+    "voiceId": "Salli",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 600,
+    "description": "Bot to make reservations necessary for a visit to an Australian city",
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "At BookBot.au, we help customers book flights, cars and accomodation at over 30 Australian destinations. How could I help you today?"
+        }
+      ],
+      "maxAttempts": 3
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, but it seems our service monkeys are having trouble with your request. Try again soon?"
+        }
+      ]
+    },
+    "detectSentiment": false,
+    "enableModelImprovements": true
+  }
+}
