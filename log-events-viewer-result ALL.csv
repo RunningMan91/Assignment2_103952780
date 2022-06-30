@@ -1,0 +1,249 @@
+timestamp,message,logStreamName
+1.65605E+12,"START RequestId: e17f1dd2-21fe-4693-8b9b-2faa55aad20c Version: $LATEST
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"[DEBUG]	2022-06-24T07:04:37.306Z	e17f1dd2-21fe-4693-8b9b-2faa55aad20c	event.bot.name=BookTrip
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"[DEBUG]	2022-06-24T07:04:37.307Z	e17f1dd2-21fe-4693-8b9b-2faa55aad20c	dispatch userId=John, intentName=BookCar
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"END RequestId: e17f1dd2-21fe-4693-8b9b-2faa55aad20c
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"REPORT RequestId: e17f1dd2-21fe-4693-8b9b-2faa55aad20c	Duration: 32.60 ms	Billed Duration: 33 ms	Memory Size: 128 MB	Max Memory Used: 38 MB	Init Duration: 165.80 ms	
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"START RequestId: 3fac9e50-06d3-4712-b2d5-b8081a4301ca Version: $LATEST
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"[DEBUG]	2022-06-24T07:05:02.366Z	3fac9e50-06d3-4712-b2d5-b8081a4301ca	event.bot.name=BookTrip
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"[DEBUG]	2022-06-24T07:05:02.366Z	3fac9e50-06d3-4712-b2d5-b8081a4301ca	dispatch userId=John, intentName=BookHotel
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"END RequestId: 3fac9e50-06d3-4712-b2d5-b8081a4301ca
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"REPORT RequestId: 3fac9e50-06d3-4712-b2d5-b8081a4301ca	Duration: 1.62 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 38 MB	
+",2022/06/24/[$LATEST]27d0a4db71ec4b859ef7a73bb4e223ec
+1.65605E+12,"START RequestId: 391afd99-f1b5-4953-90c7-a69383df24f0 Version: $LATEST
+",2022/06/24/[$LATEST]8a047db424c24245a99fd9e93328c7a4
+1.65605E+12,"[DEBUG]	2022-06-24T07:14:16.944Z	391afd99-f1b5-4953-90c7-a69383df24f0	event.bot.name=BookTrip
+",2022/06/24/[$LATEST]8a047db424c24245a99fd9e93328c7a4
+1.65605E+12,"[DEBUG]	2022-06-24T07:14:16.944Z	391afd99-f1b5-4953-90c7-a69383df24f0	dispatch userId=John, intentName=BookHotel
+",2022/06/24/[$LATEST]8a047db424c24245a99fd9e93328c7a4
+1.65605E+12,"END RequestId: 391afd99-f1b5-4953-90c7-a69383df24f0
+",2022/06/24/[$LATEST]8a047db424c24245a99fd9e93328c7a4
+1.65605E+12,"REPORT RequestId: 391afd99-f1b5-4953-90c7-a69383df24f0	Duration: 4.09 ms	Billed Duration: 5 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 138.32 ms	
+",2022/06/24/[$LATEST]8a047db424c24245a99fd9e93328c7a4
+1.65617E+12,"START RequestId: 47b124e5-1aec-426b-bca9-ab8299222d19 Version: $LATEST
+",2022/06/25/[$LATEST]f7c9b42d996b45fa92fa0aa86c37018e
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 303)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 303
+            'ViewPreference': view_preference,",2022/06/25/[$LATEST]f7c9b42d996b45fa92fa0aa86c37018e
+1.65617E+12,"END RequestId: 47b124e5-1aec-426b-bca9-ab8299222d19
+",2022/06/25/[$LATEST]f7c9b42d996b45fa92fa0aa86c37018e
+1.65617E+12,"REPORT RequestId: 47b124e5-1aec-426b-bca9-ab8299222d19	Duration: 1.08 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 36 MB	Init Duration: 113.55 ms	
+",2022/06/25/[$LATEST]f7c9b42d996b45fa92fa0aa86c37018e
+1.65617E+12,"START RequestId: 2ff5c55f-5b3c-41d7-a01c-aa7019b31f82 Version: $LATEST
+",2022/06/25/[$LATEST]7da61d7b59f045af8d9c24760b248a85
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 303)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 303
+            'ViewPreference':view_preference,",2022/06/25/[$LATEST]7da61d7b59f045af8d9c24760b248a85
+1.65617E+12,"END RequestId: 2ff5c55f-5b3c-41d7-a01c-aa7019b31f82
+",2022/06/25/[$LATEST]7da61d7b59f045af8d9c24760b248a85
+1.65617E+12,"REPORT RequestId: 2ff5c55f-5b3c-41d7-a01c-aa7019b31f82	Duration: 1.40 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 35 MB	Init Duration: 120.25 ms	
+",2022/06/25/[$LATEST]7da61d7b59f045af8d9c24760b248a85
+1.65617E+12,"START RequestId: 60fed28a-6a3c-4389-8e1f-c0908ebfbcdc Version: $LATEST
+",2022/06/25/[$LATEST]054e364291274f7eac1143225d485582
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': unexpected indent (lambda_function.py, line 485)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 485
+            session_attributes['currentReservation'] = reservation",2022/06/25/[$LATEST]054e364291274f7eac1143225d485582
+1.65617E+12,"END RequestId: 60fed28a-6a3c-4389-8e1f-c0908ebfbcdc
+",2022/06/25/[$LATEST]054e364291274f7eac1143225d485582
+1.65617E+12,"REPORT RequestId: 60fed28a-6a3c-4389-8e1f-c0908ebfbcdc	Duration: 1.19 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 36 MB	Init Duration: 109.56 ms	
+",2022/06/25/[$LATEST]054e364291274f7eac1143225d485582
+1.65617E+12,"START RequestId: a37034cd-efd4-4c22-a112-92e69908869c Version: $LATEST
+",2022/06/25/[$LATEST]0f2a733da9be4fe59ea3fa67f6c85458
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 670)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 670
+        elif intent name == 'BookFlight':",2022/06/25/[$LATEST]0f2a733da9be4fe59ea3fa67f6c85458
+1.65617E+12,"END RequestId: a37034cd-efd4-4c22-a112-92e69908869c
+",2022/06/25/[$LATEST]0f2a733da9be4fe59ea3fa67f6c85458
+1.65617E+12,"REPORT RequestId: a37034cd-efd4-4c22-a112-92e69908869c	Duration: 1.09 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 115.72 ms	
+",2022/06/25/[$LATEST]0f2a733da9be4fe59ea3fa67f6c85458
+1.65617E+12,"START RequestId: 5ab18efe-c982-4fbb-baa5-28bb263e9d5f Version: $LATEST
+",2022/06/25/[$LATEST]5cd1ef56b8fc42119b8cd52af33e8852
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 670)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 670
+        else intent name == 'BookFlight':",2022/06/25/[$LATEST]5cd1ef56b8fc42119b8cd52af33e8852
+1.65617E+12,"END RequestId: 5ab18efe-c982-4fbb-baa5-28bb263e9d5f
+",2022/06/25/[$LATEST]5cd1ef56b8fc42119b8cd52af33e8852
+1.65617E+12,"REPORT RequestId: 5ab18efe-c982-4fbb-baa5-28bb263e9d5f	Duration: 1.28 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 119.56 ms	
+",2022/06/25/[$LATEST]5cd1ef56b8fc42119b8cd52af33e8852
+1.65617E+12,"START RequestId: dabda8b3-ecc9-4adb-9186-4a80ccb70f15 Version: $LATEST
+",2022/06/25/[$LATEST]e53726b6be374a17856514e3f9b37560
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 670)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 670
+        else intent_name == 'BookFlight':",2022/06/25/[$LATEST]e53726b6be374a17856514e3f9b37560
+1.65617E+12,"END RequestId: dabda8b3-ecc9-4adb-9186-4a80ccb70f15
+",2022/06/25/[$LATEST]e53726b6be374a17856514e3f9b37560
+1.65617E+12,"REPORT RequestId: dabda8b3-ecc9-4adb-9186-4a80ccb70f15	Duration: 1.28 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 116.18 ms	
+",2022/06/25/[$LATEST]e53726b6be374a17856514e3f9b37560
+1.65617E+12,"START RequestId: fd64774f-7cd6-459a-b1e5-02dc3dd9ad2b Version: $LATEST
+",2022/06/25/[$LATEST]c0d3b0c0d9c546259111b7cc0855d06a
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 670)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 670
+        eli intent_name == 'BookFlight':",2022/06/25/[$LATEST]c0d3b0c0d9c546259111b7cc0855d06a
+1.65617E+12,"END RequestId: fd64774f-7cd6-459a-b1e5-02dc3dd9ad2b
+",2022/06/25/[$LATEST]c0d3b0c0d9c546259111b7cc0855d06a
+1.65617E+12,"REPORT RequestId: fd64774f-7cd6-459a-b1e5-02dc3dd9ad2b	Duration: 1.21 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 121.16 ms	
+",2022/06/25/[$LATEST]c0d3b0c0d9c546259111b7cc0855d06a
+1.65617E+12,"START RequestId: 8af144e3-2a9b-4cbe-bf98-a4226527eb7b Version: $LATEST
+",2022/06/25/[$LATEST]3ea3bcd2a3bc4befbd1aea89dabb4c2e
+1.65617E+12,"[ERROR] Runtime.UserCodeSyntaxError: Syntax error in module 'lambda_function': invalid syntax (lambda_function.py, line 670)
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"" Line 670
+        else intent_name == 'BookFlight':",2022/06/25/[$LATEST]3ea3bcd2a3bc4befbd1aea89dabb4c2e
+1.65617E+12,"END RequestId: 8af144e3-2a9b-4cbe-bf98-a4226527eb7b
+",2022/06/25/[$LATEST]3ea3bcd2a3bc4befbd1aea89dabb4c2e
+1.65617E+12,"REPORT RequestId: 8af144e3-2a9b-4cbe-bf98-a4226527eb7b	Duration: 1.16 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 114.63 ms	
+",2022/06/25/[$LATEST]3ea3bcd2a3bc4befbd1aea89dabb4c2e
+1.65617E+12,"START RequestId: 29d6a43f-559f-4f71-ab77-4bc0cfcf8f38 Version: $LATEST
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:20:19.742Z	29d6a43f-559f-4f71-ab77-4bc0cfcf8f38	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:20:19.742Z	29d6a43f-559f-4f71-ab77-4bc0cfcf8f38	dispatch userId=John, intentName=BookCar
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"END RequestId: 29d6a43f-559f-4f71-ab77-4bc0cfcf8f38
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"REPORT RequestId: 29d6a43f-559f-4f71-ab77-4bc0cfcf8f38	Duration: 19.97 ms	Billed Duration: 20 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 128.19 ms	
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"START RequestId: 4588a075-f061-41f2-9f1b-1293a4dd77ea Version: $LATEST
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:22:48.975Z	4588a075-f061-41f2-9f1b-1293a4dd77ea	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:22:48.975Z	4588a075-f061-41f2-9f1b-1293a4dd77ea	dispatch userId=John, intentName=BookHotel
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"END RequestId: 4588a075-f061-41f2-9f1b-1293a4dd77ea
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"REPORT RequestId: 4588a075-f061-41f2-9f1b-1293a4dd77ea	Duration: 1.45 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"START RequestId: e0be17a7-5a7f-4570-a7a4-10070db99643 Version: $LATEST
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:25:35.930Z	e0be17a7-5a7f-4570-a7a4-10070db99643	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[DEBUG]	2022-06-25T14:25:35.930Z	e0be17a7-5a7f-4570-a7a4-10070db99643	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"[ERROR] ValueError: invalid literal for int() with base 10: 'evening'
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"", line 687, in lambda_handler
+    return dispatch(event)
+  File ""/var/task/lambda_function.py"", line 671, in dispatch
+    return book_flight(intent_request)
+  File ""/var/task/lambda_function.py"", line 354, in book_flight
+    departure_time = safe_int(try_ex(lambda: intent_request['currentIntent']['slots']['DepartureTime']))
+  File ""/var/task/lambda_function.py"", line 72, in safe_int
+    return int(n)",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"END RequestId: e0be17a7-5a7f-4570-a7a4-10070db99643
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"REPORT RequestId: e0be17a7-5a7f-4570-a7a4-10070db99643	Duration: 1.79 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 38 MB	
+",2022/06/25/[$LATEST]645252302d214bb4a629506e1fa374df
+1.65617E+12,"START RequestId: 0189e507-7fdf-4b17-abc1-017e34494199 Version: $LATEST
+",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"[DEBUG]	2022-06-25T14:27:11.0Z	0189e507-7fdf-4b17-abc1-017e34494199	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"[DEBUG]	2022-06-25T14:27:11.0Z	0189e507-7fdf-4b17-abc1-017e34494199	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"[ERROR] NameError: name 'confirmation_status' is not defined
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"", line 687, in lambda_handler
+    return dispatch(event)
+  File ""/var/task/lambda_function.py"", line 671, in dispatch
+    return book_flight(intent_request)
+  File ""/var/task/lambda_function.py"", line 387, in book_flight
+    if confirmation_status == 'Denied':",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"END RequestId: 0189e507-7fdf-4b17-abc1-017e34494199
+",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"REPORT RequestId: 0189e507-7fdf-4b17-abc1-017e34494199	Duration: 2.19 ms	Billed Duration: 3 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 117.89 ms	
+",2022/06/25/[$LATEST]15ded8c7b8ce4d2990ebbddada5f15b5
+1.65617E+12,"START RequestId: 5a877507-2584-470c-b059-7858d99291cc Version: $LATEST
+",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"[DEBUG]	2022-06-25T14:32:04.573Z	5a877507-2584-470c-b059-7858d99291cc	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"[DEBUG]	2022-06-25T14:32:04.573Z	5a877507-2584-470c-b059-7858d99291cc	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"[ERROR] NameError: name 'pickup_city' is not defined
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"", line 689, in lambda_handler
+    return dispatch(event)
+  File ""/var/task/lambda_function.py"", line 673, in dispatch
+    return book_flight(intent_request)
+  File ""/var/task/lambda_function.py"", line 415, in book_flight
+    if (not pickup_city and not pickup_date and not return_date and not driver_age and not car_type)\",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"END RequestId: 5a877507-2584-470c-b059-7858d99291cc
+",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"REPORT RequestId: 5a877507-2584-470c-b059-7858d99291cc	Duration: 7.15 ms	Billed Duration: 8 ms	Memory Size: 128 MB	Max Memory Used: 38 MB	Init Duration: 127.54 ms	
+",2022/06/25/[$LATEST]7c115b8661f646b8a80aaa5130a1aa80
+1.65617E+12,"START RequestId: df1e53ad-2bd8-444e-a645-c7d6478d930e Version: $LATEST
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:08.129Z	df1e53ad-2bd8-444e-a645-c7d6478d930e	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:08.129Z	df1e53ad-2bd8-444e-a645-c7d6478d930e	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[ERROR] NameError: name 'confirmation_context' is not defined
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"", line 689, in lambda_handler
+    return dispatch(event)
+  File ""/var/task/lambda_function.py"", line 673, in dispatch
+    return book_flight(intent_request)
+  File ""/var/task/lambda_function.py"", line 416, in book_flight
+    or confirmation_context == 'AutoPopulate':",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"END RequestId: df1e53ad-2bd8-444e-a645-c7d6478d930e
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"REPORT RequestId: df1e53ad-2bd8-444e-a645-c7d6478d930e	Duration: 2.48 ms	Billed Duration: 3 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 126.79 ms	
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"START RequestId: 10c2221e-b7bb-4df3-9abc-572c1f64d775 Version: $LATEST
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:09.528Z	10c2221e-b7bb-4df3-9abc-572c1f64d775	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:09.528Z	10c2221e-b7bb-4df3-9abc-572c1f64d775	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"[ERROR] NameError: name 'confirmation_context' is not defined
+Traceback (most recent call last):
+  File ""/var/task/lambda_function.py"", line 689, in lambda_handler
+    return dispatch(event)
+  File ""/var/task/lambda_function.py"", line 673, in dispatch
+    return book_flight(intent_request)
+  File ""/var/task/lambda_function.py"", line 416, in book_flight
+    or confirmation_context == 'AutoPopulate':",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"END RequestId: 10c2221e-b7bb-4df3-9abc-572c1f64d775
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"REPORT RequestId: 10c2221e-b7bb-4df3-9abc-572c1f64d775	Duration: 1.45 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 38 MB	
+",2022/06/25/[$LATEST]54100a4129e342c688dd15bf5cb8c9f7
+1.65617E+12,"START RequestId: 5120b11f-4a74-4781-9bf1-4aa35be66445 Version: $LATEST
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:42.365Z	5120b11f-4a74-4781-9bf1-4aa35be66445	event.bot.name=BookTrip
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:33:42.366Z	5120b11f-4a74-4781-9bf1-4aa35be66445	dispatch userId=John, intentName=BookFlight
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"END RequestId: 5120b11f-4a74-4781-9bf1-4aa35be66445
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"REPORT RequestId: 5120b11f-4a74-4781-9bf1-4aa35be66445	Duration: 2.03 ms	Billed Duration: 3 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	Init Duration: 144.56 ms	
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"START RequestId: e4f5999d-9de1-43a8-8e74-e6586758af6d Version: $LATEST
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:38:06.497Z	e4f5999d-9de1-43a8-8e74-e6586758af6d	event.bot.name=Jarvis
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:38:06.497Z	e4f5999d-9de1-43a8-8e74-e6586758af6d	dispatch userId=qldnybonhmal3umzc57i1kkc2uhxnkv3, intentName=BookFlight
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"END RequestId: e4f5999d-9de1-43a8-8e74-e6586758af6d
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"REPORT RequestId: e4f5999d-9de1-43a8-8e74-e6586758af6d	Duration: 1.46 ms	Billed Duration: 2 ms	Memory Size: 128 MB	Max Memory Used: 37 MB	
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"START RequestId: d46fb510-207d-4a95-9e1d-74f02d35880e Version: $LATEST
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:38:12.612Z	d46fb510-207d-4a95-9e1d-74f02d35880e	event.bot.name=Jarvis
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
+1.65617E+12,"[DEBUG]	2022-06-25T14:38:12.612Z	d46fb510-207d-4a95-9e1d-74f02d35880e	dispatch userId=qldnybonhmal3umzc57i1kkc2uhxnkv3, intentName=BookFlight
+",2022/06/25/[$LATEST]f9fb3b91c32a47078976ca5e04951305
