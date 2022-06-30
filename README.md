@@ -3,7 +3,13 @@
 This repository contains a number of different elements:
 
   1. A Django project containing a home page with a form for a user to sign in before using the chatbot for trip planning.
-  2. A .JSON file of the AWS Lex chat bot created for trip planning.
-  3. A lambda export
-  4. a copy of the report - PDF
-  5. Screen capture of the Lex bot in action
+  2. Jarvis_Bot_Export.json
+      - AWS Lex chat bot created for trip planning
+  3. JarvisValidation - Lambda Function.yaml
+      - AWS Lambda function download
+  4. log-events-view-result ALL TESTING.csv
+      - Log of all testing during bot development
+  5. Assignment 2 Report.pdf
+      - 1000 word report for Assignment 2
+  6. asdf
+      - Screen capture of the Lex bot in action
