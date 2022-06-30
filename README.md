@@ -6,7 +6,7 @@ This repository contains a number of different elements:
       - Contains a home page with a form for user sign-in before using the chatbot for trip planning
   2. Jarvis_Bot_Export.json
       - AWS Lex chat bot created for trip planning
-  3. JarvisValidation - Lambda Function.yaml
+  3. JarvisValidation_LambdaFunction.yaml
       - AWS Lambda function download
   4. log-events-view-result ALL TESTING.csv
       - Log of all testing during bot development
