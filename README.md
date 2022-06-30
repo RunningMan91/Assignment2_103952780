@@ -1,4 +1,4 @@
-# Assignment2_103952780
+# Timothy Bailey - Assignment 2 (Student ID: 103952780)
 
 This repository contains a number of different elements:
 
