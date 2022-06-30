@@ -2,7 +2,8 @@
 
 This repository contains a number of different elements:
 
-  1. A Django project containing a home page with a form for a user to sign in before using the chatbot for trip planning.
+  1. My Django Project
+      - Contains a home page with a form for user sign-in before using the chatbot for trip planning
   2. Jarvis_Bot_Export.json
       - AWS Lex chat bot created for trip planning
   3. JarvisValidation - Lambda Function.yaml
