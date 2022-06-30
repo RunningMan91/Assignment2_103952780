@@ -12,5 +12,6 @@ This repository contains a number of different elements:
       - Log of all testing during bot development
   5. Assignment 2 Report.pdf
       - 1000 word report for Assignment 2
-  6. asdf
+  6. Chatbot Functioning Example 2
       - Screen capture of the Lex bot in action
+      - You'll need to download this file to watch the Lex bot in action
