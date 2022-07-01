@@ -16,5 +16,3 @@ This repository contains a number of different elements:
   6. Chatbot Functioning Example 2
       - Screen capture of the Lex bot in action
       - You'll need to download this file to watch the Lex bot in action
-  7. asdf
-      - asdf
