@@ -5,6 +5,9 @@ This repository contains a number of different elements:
   1. My Django Project
       - Full setup including login, logout and main page. In place of a working chat bot, I have included an embedded video of my chatbot working, as embedding the chatbot itself was not necessary as instructed by eLA.
       - These can be found in the Templates directory here: https://github.com/RunningMan91/Assignment2_103952780/tree/main/My%20Django%20Project/Assignment2_root/Assignment2_project/Templates
+      - Login for the Django site:
+        - Username: BookBotAdmin
+        - Password: travelisfun
   2. Assignment 2 Report.pdf
       - 1000 word report for Assignment 2
   3. Chatbot Functioning Example 2
