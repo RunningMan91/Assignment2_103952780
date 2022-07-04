@@ -1,0 +1,15 @@
+<!-- templates/home.html-->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  Hi {{ user.username }}! Welcome to BookBot.au - our virtual assistant will help you with your booking:
+  <iframe width="790" height="790" src="https://www.youtube.com/embed/1PnOc94TWMY" title="BookBotTest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+{% else %}
+  <p>Welcome to BookBot.au. Log in to talk to our virtual booking assistant.</p>
+  <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}
