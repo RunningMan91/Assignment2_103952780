@@ -3,8 +3,8 @@
 This repository contains a number of different elements:
 
   1. My Django Project
-      - Contains a home page with a form for user sign-in before using the chatbot for trip planning
-      - Find this .html file at this link: https://github.com/RunningMan91/Assignment2_103952780/blob/main/My%20Django%20Project/Assignment_2_Project/TEMPLATES/home.html
+      - Full setup including login, logout and main page. In place of a working chat bot, I have included an embedded video of my chatbot working, as embedding the chatbot itself was not necessary as instructed by eLA.
+      - These can be found in the Templates directory here: https://github.com/RunningMan91/Assignment2_103952780/tree/main/My%20Django%20Project/Assignment2_root/Assignment2_project/Templates
   2. Jarvis_Bot_Export.json
       - AWS Lex chat bot created for trip planning
   3. JarvisValidation_LambdaFunction.yaml
